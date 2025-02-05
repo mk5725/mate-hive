@@ -70,7 +70,7 @@ create table tag
     isDelete   tinyint  default 0 not null comment '是否删除',
     constraint uniIdx_tagName
         unique (tagName)
-) comment '标签';
+) comment '标签' ;
 
 create index idx_userId
     on tag (userId);
